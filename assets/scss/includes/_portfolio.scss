@@ -1,0 +1,17 @@
+// ============= portfolio page styling
+.portfolio-banner{
+    background-image: url(/public/images/portfiolio/Portfolio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.portfolio-section1{
+    font-family: 'Varela', sans-serif;
+    .active{
+        background-color: $btn-clr2;
+    }
+    a:hover{
+         background-color: $btn-clr2;
+    }
+
+}

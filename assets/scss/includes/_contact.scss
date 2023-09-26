@@ -1,0 +1,67 @@
+.section6-contact, .contact-banner, .contact-section2{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Varela', sans-serif;
+}
+.section6-contact{
+    background-image: url(/public/images/section6.jpg);
+    button{
+        background-color: $btn-clr;
+    }
+    input, select, textarea{
+        border: 1px solid rgb(168, 168, 168);
+        &::placeholder{
+            color: rgb(117, 116, 116);
+        }
+    }
+    .mt-c2{
+        @include media-min-md{
+            margin-top: 6.5rem;
+        }
+    }
+    .btm-bg{
+        background-color: $grey-bg;
+    }
+    .input-posi{
+        @include media-min-md{
+            position: relative;
+            top: 96px;
+        } 
+    }
+}
+.icon-br{
+    background-color: $btn-clr;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    i{
+        color: #fff;
+    }
+}
+.br-btm{
+    border-bottom: 1px dotted;
+    width: 80%;
+    @include media-min-lg{
+        width: 65%;
+    }
+}
+// ============= contact page styling
+.contact-banner{
+    background-image: url(/public/images/contact_sec1.jpg); 
+}
+.contact-section1{
+    .br-btm{
+        @include media-min-xl{
+            width: 85%;
+        }
+    }
+}
+.contact-section2{
+    background-image: url(/public/images/contact_sec2.jpg);
+    input, select, textarea{
+        &::placeholder{
+            color: black;
+        }
+    }
+}

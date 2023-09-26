@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+button{
+    font-family: 'Varela', sans-serif !important;
+}
+.offcanvas{
+    background-color: rgba($color: $navbar-clr, $alpha: .9) !important;
+    width: 330px !important;
+    @include media-min-lg{
+        margin-top: 5rem;
+        margin-right: 4rem;
+    }
+    @include media-min-xl{
+        margin-right: 9rem;
+    }
+    .active{
+        color: black !important;
+    }
+    .nav-item a{
+        font-size: 20px;
+        &:hover{
+            color: black !important;
+        }
+    }
+}
+.about-banner, .service-banner, .pricing-banner, .portfolio-banner, .contact-banner{
+    .banner-content{
+    h1{
+        font-family: 'Cinzel', serif;
+        .head-border{
+            border-bottom: 2px solid;
+            border-left: 2px solid;
+        }
+        font-size: 3.2rem;
+        @include media-min-md{
+            padding: 4rem 0;
+            font-size: 4.5rem;
+        }
+    }
+}
+} 

@@ -1,0 +1,95 @@
+.section4-pricing, .pricing-banner, .pricing-bg, .pricing-section2, .pricing-section3{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Varela', sans-serif;
+}
+.section4-pricing{
+    background-image: url(/public/images/section4.jpg);
+    img{
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+    }
+    .price-bg{
+        background-color: rgba($color: #fff, $alpha: .9);
+        .c-br{
+            border-bottom: 1px dotted;
+        }
+        .c-txt{
+            color: rgb(92, 90, 90);
+            @include media-min-lg{
+                font-size: larger;
+            }
+        }
+    }
+    .br-btm{
+        @include media-min-md{
+            border-bottom: 1px dotted rgb(92, 90, 90);
+            width: 95%;
+        }
+    }
+    button{
+        background-color: $btn-clr;
+        &:hover{
+            color: black !important;
+        }
+    }
+    .p-btm{
+        padding: 6rem 0;
+        background-color: #ECECEC;
+    }
+}
+// ============= pricing page styling
+.pricing-banner{
+    background-image: url(/public/images/price_sec1.jpg); 
+}
+.pricing-bg{
+    background-image: url(/public/images/price_bg.jpg);
+    background-attachment: fixed;
+    .pricing-section2{
+        background-image: url(/public/images/price_sec2.jpg);
+        .c-br{
+            border-bottom: 1px dotted;
+        }
+        .head-br, .head-br2, .head-br3{
+            border-bottom: 1px solid;
+        }
+        .head-br{
+            @include media-min-lg{
+                width: 40%;
+            }
+        }
+        .head-br2{
+            @include media-min-lg{
+                width: 50%;
+            } 
+            @include media-min-xl{
+                width: 58%;
+            }
+        }
+        .head-br3{
+            @include media-min-lg{
+                width: 75%;
+            } 
+        }
+    }
+    .pricing-section3{
+        background-image: url(/public/images/price_sec3.jpg);
+        padding-bottom: 12.5rem;
+    }
+    .pricing-package{
+        .btm-br{
+            border-top: 1px solid !important;
+        }
+        button{
+            background-color: $btn-clr2;
+        }
+        p{
+            color: rgb(219, 216, 216);
+        }
+        .clr-red{
+            color: #fa6e6eb9;
+        }
+    }
+}

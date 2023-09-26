@@ -1,0 +1,36 @@
+.section5-testimonials{
+    background-image: url(/public/images/section5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Varela', sans-serif;
+    .c-bg{
+        background-color: rgba($color: #fff, $alpha: .3);
+        position: relative;
+        p{
+            text-align: justify;
+        }
+        h4{
+            @include media-min-lg-x{
+                position: absolute;
+                right: 150px;
+                top: 240px;
+            }
+            @include media-min-xl{
+                position: absolute;
+                right: 160px;
+                top: 250px;
+            }
+            @include media-min-xxl{
+                position: absolute;
+                right: 195px;
+                top: 225px;
+            }
+        }
+        img{
+            border-radius: 50%;
+            height: 120px;
+            width: 120px;
+        }
+    }
+}

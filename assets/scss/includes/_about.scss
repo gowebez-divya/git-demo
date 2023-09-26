@@ -1,0 +1,137 @@
+.section2-about{
+    font-family: 'Varela', sans-serif;
+    .about-bg{
+        background-color: $about-bg;
+        h2{
+            font-size: 4.5rem;
+            color: rgb(249, 249, 249);
+            letter-spacing: 10px;
+            @include media-min-xl{
+                font-size: 5.5rem;
+            }
+        }
+        .l-posi{
+            color: rgb(87, 83, 83);
+            @include media-min-lg{
+                position: relative;
+                bottom: 70px;
+                left: 10px;
+            }
+            @include media-min-xl{
+                position: relative;
+                bottom: 80px;
+                left: 40px;
+            }
+        }
+    }
+    position: relative;
+    .about-para{
+        @include media-min-lg-x{
+            position: absolute;
+            right: 100px;
+            left: 350px;
+            top: 115px;
+            bottom: 0;
+        }
+        @include media-min-xl{
+            position: absolute;
+            right: 170px;
+            left: 450px;
+            top: 180px;
+            bottom: 0;
+        }
+        @include media-min-xxl{
+            position: absolute;
+            right: 230px;
+            left: 500px;
+            top: 190px;
+            bottom: 0;
+        }
+        background-color: white;
+        text-align: justify;
+    }
+    button{
+        background-color: black;
+        color: white;
+        @include media-min-xl{
+            margin-left: 3.8rem !important;
+        }
+    }
+}
+// ============= about page styling
+.about-banner, .about-section2, .about-section4{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Varela', sans-serif;
+}
+.about-banner{
+    background-image: url(/public/images/about_section1.jpg);
+}
+.about-section2{
+    background-image: url(/public/images/about_section2.jpg);
+    h2{
+        font-size: 2.8rem;
+    }
+    p{
+        font-size: large;
+    }
+    .img-txt{
+        background-color: #e9e8e8;
+        width: 70%;
+        position: relative;
+        bottom: 55px;
+    }
+} 
+.about-section3{
+    font-family: 'Varela', sans-serif;
+    .s3-1{
+        background-color: $as3-1;
+        p{
+            text-align: justify;
+            color: rgb(112, 111, 111);
+        }
+        @include media-min-xl{
+            padding: 4rem 0 4rem 8rem !important;
+        }
+    }
+    .s3-2{
+        background-color: $as3-2;
+        img{
+            @include media-min-lg{
+                position: relative;
+                right: 160px;
+                top: 75px;
+            }
+            @include media-min-xl{
+                position: relative;
+                right: 190px;
+                top: 90px;
+            }
+            @include media-min-xxl{
+                position: relative;
+                right: 220px;
+                top: 65px;
+            }
+        }
+    }
+} 
+.about-section4{
+    background-image: url(/public/images/about_section4.jpg);
+    .p-tb{
+        padding: 7.5rem 0;
+    }
+    i{
+        font-size: 4rem;
+        padding: 1rem;
+        outline: 1px solid;
+        border-radius: 50%;
+    }
+} 
+.about-section5{
+    background-color: $as3-1;
+    .carousel-icon{
+        color: #000;
+        background-color: $as3-1;
+    }
+}

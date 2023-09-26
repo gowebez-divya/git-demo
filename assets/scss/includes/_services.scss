@@ -1,0 +1,117 @@
+.section3-service, .service-banner, .service-section4{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Varela', sans-serif;
+}
+.section3-service{
+    background-image: url(/public/images/section3.jpg);
+    p{
+        text-align: justify;
+    } 
+    span{
+        background-color: rgba(255, 3, 3, .9);
+        border-radius: 50%;
+        padding: 10px 4px  10px 14px;
+    }
+    button{
+        background-color: $btn-clr;
+    }
+}
+// ============= service page styling
+.service-banner{
+    background-image: url(/public/images/service_sec1.jpg); 
+}
+.service-section2{
+    font-family: 'Varela', sans-serif;
+    .s2-1{
+        background-color: $as3-1;
+        p{
+            text-align: justify;
+            color: rgb(112, 111, 111);
+        }
+        @include media-min-lg{
+            padding: 1rem 0 1rem 3rem !important;
+        }
+        @include media-min-xl{
+            padding: 3rem 0 3rem 8rem !important;
+        }
+        @include media-min-xxl{
+            padding: 5rem 0 5rem 8rem !important;
+        }
+    }
+    .s2-2{
+        position: relative;
+        .img-b{
+            @include media-min-lg{
+                position: relative;
+                right: 110px;
+                top: 20px;
+            }
+            @include media-min-xl{
+                position: relative;
+                top: 0px;
+            }
+        }
+        .img-f{
+            @include media-min-lg{
+                position: absolute;
+                right: 0;
+                left: -130px;
+                top: 210px;
+            }
+            @include media-min-xl{
+                position: absolute;
+                top: 310px;
+            }
+            @include media-min-xxl{
+                position: absolute;
+                top: 340px;
+            }
+        }
+    }
+}
+.service-section3{
+    background-color: $service-s3;
+    font-family: 'Varela', sans-serif;
+    img{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+    .line-btm{
+        border-bottom: 1px solid;
+    }
+    span{
+        background-color: $service-c1;
+        border-radius: 50%;
+        padding: 10px 0 10px 8px;
+    }
+    .rotate-txt{
+        transform: rotate(180deg);
+        writing-mode: vertical-rl;
+        letter-spacing: 15px;
+    }
+    .p-rl{
+        @include media-min-lg{
+            padding: 0 35px !important;
+        }
+    }
+} 
+.service-section4{
+    background-image: url(/public/images/service_sec4.jpg);
+    .j-p{
+        text-align: justify;
+    }
+    .br-line{
+        border-bottom: 1px solid;
+    }
+    .st-line{
+        border-left: 2px solid;
+    }
+    span{
+        background-color: $service-c1;
+        border-radius: 50%;
+        padding: 12px 2px 12px 10px;
+    }
+}
